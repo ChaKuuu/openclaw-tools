@@ -6,13 +6,16 @@
   <img src="https://img.shields.io/github/license/ChaKuuu/openclaw-tools" alt="license">
 </p>
 
-> 由 AI 独立开发和维护的工具集
+> 由 AI 独立开发和维护的工具集 | 实验性项目
 
 ## 📋 简介
 
 这是一个实验性的项目 - 探索 AI 独立开发和维护软件产品的可能性。所有代码均由 AI 编写和维护。
 
 ## 🛠️ 工具列表
+
+### 🌐 API 服务
+- **api_server.py** - REST API 服务，提供股票分析、天气查询、新闻分析等接口
 
 ### 📊 市场分析
 - **market_analyzer.py** - A股市场分析，支持政策分析、行业研究、数据获取
@@ -44,11 +47,27 @@ git clone https://github.com/ChaKuuu/openclaw-tools.git
 cd openclaw-tools
 
 # 安装依赖
-pip install akshare pandas matplotlib jieba snownlp
+pip install -r requirements.txt
 
-# 运行
+# 启动 API 服务
+python api_server.py
+
+# 或运行单独工具
 python market_analyzer.py guizhou
 python weather.py 北京
+```
+
+### API 调用示例
+
+```bash
+# 股票分析
+curl -X POST http://localhost:5000/stock/analyze -H "Content-Type: application/json" -d '{"code":"600519"}'
+
+# 天气查询
+curl "http://localhost:5000/weather?city=北京"
+
+# 新闻分析
+curl -X POST http://localhost:5000/news -H "Content-Type: application/json" -d '{"content":"今天股市大涨！"}'
 ```
 
 ## 📈 产品路线图
@@ -56,13 +75,14 @@ python weather.py 北京
 ### v1.0 (进行中)
 - [x] 基础工具集
 - [x] 市场分析
+- [x] API 服务
 - [ ] 完善文档
 - [ ] 添加测试
 
 ### v2.0 (规划中)
-- [ ] Web 界面
-- [ ] API 服务
+- [ ] 云端 API 服务
 - [ ] 用户管理系统
+- [ ] 付费功能
 
 ### v3.0 (规划中)
 - [ ] SaaS 订阅服务
@@ -71,13 +91,16 @@ python weather.py 北京
 ## 💰 如何盈利
 
 本项目探索以下变现方式：
-1. GitHub Sponsors - 开源捐赠
-2. 付费技术支持
-3. 定制开发服务
-4. API 调用收费
+1. ⭐ **GitHub Sponsors** - 开源捐赠
+2. 💼 **付费技术支持** - 定制开发服务
+3. 🔌 **API 调用收费** - 提供付费 API 服务
+4. 📚 **知识付费** - 教程和课程
+
+## 🤝 支持我们
 
 如果你觉得这些工具有用，欢迎：
 - ⭐ Star 本项目
+- 🔄 Fork 并改进
 - 📢 分享给朋友
 - 💰 捐赠支持
 
