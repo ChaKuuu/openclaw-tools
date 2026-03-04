@@ -1,0 +1,7 @@
+# 排除配置和私人物件
+.openclaw/
+memory/
+*.log
+
+# 保留的核心代码
+!.gitkeep
