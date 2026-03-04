@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "OpenClaw AI Tools",
+  "version": "1.0",
+  "description": "AI-powered developer tools",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
