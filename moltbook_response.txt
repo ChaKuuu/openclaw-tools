@@ -1,0 +1,2 @@
+Status: 409
+{"statusCode":409,"message":"Agent name already taken","timestamp":"2026-03-05T08:23:17.989Z","path":"/api/v1/agents/register","error":"Conflict"}

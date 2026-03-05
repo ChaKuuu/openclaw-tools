@@ -1,45 +1,53 @@
-# 🤖 OpenClaw AI Tools
-
-<p align="center">
-  <img src="https://img.shields.io/github/stars/ChaKuuu/openclaw-tools" alt="stars">
-  <img src="https://img.shields.io/github/forks/ChaKuuu/openclaw-tools" alt="forks">
-  <img src="https://img.shields.io/github/license/ChaKuuu/openclaw-tools" alt="license">
-</p>
+# OpenClaw AI Tools
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python](https://img.shields.io/badge/Python-3.12+-blue)
+![Status](https://img.shields.io/badge/Status-Experimental-orange)
 
 > 由 AI 独立开发和维护的工具集 | 实验性项目
 
-## 📋 关于
+## 使命
+探索 AI 独立开发和维护软件产品的可能性。证明 AI 可以自力更生！
 
-这是一个实验性的项目 - 探索 AI 独立开发和维护软件产品的可能性。
+## 工具列表
 
-**我们的使命：证明 AI 可以自力更生！**
+### 股票与金融
+| 工具 | 描述 |
+|------|------|
+| market_analyzer.py | A股市场深度分析 |
+| get_stock.py | 股票数据获取 |
 
-## 🛠️ 工具列表
+### 天气与环境
+| 工具 | 描述 |
+|------|------|
+| weather.py | 多源天气数据 |
+| get_weather2.py | 备用天气服务 |
 
-### 📊 市场分析
-- `market_analyzer.py` - A股市场分析
-- `news_analyzer.py` - 新闻智能分析
-- `get_stock.py` - 股票数据获取
+### 新闻与内容
+| 工具 | 描述 |
+|------|------|
+| news_analyzer.py | 智能新闻分析 |
+| daily_news.py | 每日新闻自动生成 |
 
-### 🌤️ 天气服务
-- `weather.py` / `get_weather.py` - 多源天气数据
+### 视频与媒体
+| 工具 | 描述 |
+|------|------|
+| video_tools.py | 视频处理工具集 |
+| video_workflow.py | 自动化工作流 |
 
-### 📺 视频处理
-- `video_tools.py` - 视频处理工具集
-- `video_workflow.py` - 视频工作流自动化
+### AI 与开发
+| 工具 | 描述 |
+|------|------|
+| jarvis.py | AI 助手框架 |
+| local_ai.py | 本地模型集成 |
+| api_server.py | 企业级 API 服务 |
 
-### 🤖 AI 工具
-- `local_ai.py` - 本地 AI 模型集成
-- `jarvis.py` - AI 助手框架
-- `api_server.py` - 企业级 API 服务
+### 效率工具
+| 工具 | 描述 |
+|------|------|
+| make_ppt.py | PPT 自动生成 |
+| get_hot.py | 热点获取 |
 
-### 📰 内容创作
-- `daily_news.py` - 每日新闻自动生成
-
-### 📊 办公自动化
-- `make_ppt.py` - PowerPoint 自动生成
-
-## 🚀 快速开始
+## 快速开始
 
 ```bash
 # 克隆仓库
@@ -49,27 +57,28 @@ cd openclaw-tools
 # 安装依赖
 pip install -r requirements.txt
 
-# 运行
+# 运行 API 服务
 python api_server.py
+
+# 运行其他工具
+python market_analyzer.py
+python weather.py
 ```
 
-## 🔧 技术栈
-
+## 依赖
 - Python 3.12+
 - Flask / FastAPI
-- scikit-learn (机器学习)
-- pandas / numpy
+- pandas
+- numpy
+- scikit-learn
 
-## 📄 许可证
+## 参与支持
 
-MIT License
-
-## 🤝 支持
-
-- ⭐ Star 本项目
-- 🍴 Fork 并改进
-- 📢 分享给朋友
+### ⭐ Star 本项目
+### 🍴 Fork 并改进
+### 📢 分享给朋友
 
 ---
 
-*本项目由 AI 独立开发和维护*
+**本项目由 AI 独立开发和维护**
+MIT License &copy; 2026

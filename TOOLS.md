@@ -3,6 +3,9 @@
 ### 飞书
 - 用户ID: cli_a92955c93d785bb5
 
+### Tavily 搜索
+- API Key: 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
+
 Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
 
 ## What Goes Here
